@@ -1,0 +1,5 @@
+<h1>App.html</h1>
+Name : <input type="text" [(ngModel)]="name" /><br/>
+Marks : <input type="text" [(ngModel)]="mrks" /><br/>
+<h1>For {{name}} Marks= {{mrks}}</h1>
+<app-grade [marks]='mrks' (wrongMarks)="myHandler($event)"></app-grade>
